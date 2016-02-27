@@ -1,0 +1,22 @@
+DrawingTool provides drawing tools specified as follows:
+
+C w h           Create Canvas: Should create a new canvas of width w and height h.
+
+L x1 y1 x2 y2   Create Line: Should create a new line from (x1,y1) to (x2,y2). Currently only horizontal or vertical lines are supported. Horizontal and vertical lines will be drawn using the 'x' character.
+
+R x1 y1 x2 y2   Create Rectangle: Should create a new rectangle, whose upper left corner is (x1,y1) and lower right corner is (x2,y2). Horizontal and vertical lines will be drawn using the 'x' character.
+
+B x y c         Bucket Fill: Should fill the entire area connected to (x,y) with "colour" c. The behaviour of this is the same as that of the "bucket fill" tool in paint programs.
+
+In order to run DrawingTool, run the following on the command line: python DrawingTool.py <path to input file> <path to output file>
+
+For example, python DrawingTool.py input/input.txt output/output.txt
+
+In order to run DrawingTool's tests, run the following on the command line: python testDrawingTool.py <path to input file>
+Note: an output file is not necessary for the tests
+
+This will invoke all tests, print board state for each test, and indicate whether or not all tests passed.
+
+
+
+
